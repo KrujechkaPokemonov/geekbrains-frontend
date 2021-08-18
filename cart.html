@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9408a3010d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shop: Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="wrap header-wrap">
+            <nav class="header-left">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <a href="#" class="logo-link">
+                    <img src="img/search_icon.svg" alt="search">
+                </a>
+            </nav>
+            <nav class="header-right navigation">
+                <div class="container">
+                    <ul class="menu">
+                        <li class="menu-list">
+                            <a href="#" class="menu-link"><img src="img/menu_icon.svg" alt="menu"
+                                    class="menu-link-img"></a>
+                            <div class="mega-box">
+                                <h3 class="mega-head">Menu</h3>
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">Man</h3>
+                                    <a href="catalog.html" class="mega-link">Accessories</a>
+                                    <a href="catalog.html" class="mega-link">Bags</a>
+                                    <a href="catalog.html" class="mega-link">Denim</a>
+                                    <a href="catalog.html" class="mega-link">T-Shirts</a>
+                                </div>
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">Woman</h3>
+                                    <a href="product.html" class="mega-link">Accessories</a>
+                                    <a href="product.html" class="mega-link">Jackets & Coats</a>
+                                    <a href="product.html" class="mega-link">Polos</a>
+                                    <a href="product.html" class="mega-link">T-Shirts</a>
+                                    <a href="product.html" class="mega-link">Shirts</a>
+                                </div>
+                                <div class="mega-item">
+                                    <h3 class="mega-heading">Kids</h3>
+                                    <a href="#" class="mega-link">Accessories</a>
+                                    <a href="#" class="mega-link">Jackets & Coats</a>
+                                    <a href="#" class="mega-link">Polos</a>
+                                    <a href="#" class="mega-link">T-Shirts</a>
+                                    <a href="#" class="mega-link">Shirts</a>
+                                    <a href="#" class="mega-link">Bags</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="menu-link"><img src="img/account_icon.svg" class="account-link"
+                                    alt="account"></a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="cart.html" class="menu-link"><img src="img/card.svg" alt="cart"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <section class="under-header">
+        <div class="wrap under-header-wrap">
+            <div class="under-header-left">
+                <h1 class="under-header-title ">SHOPPING CART</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap cart">
+        <div class="cart_left">
+            <div class="cart_box">
+                <img src="img/card_3.png" class="img_cart_box" alt="img">
+                <div class="cart_text">
+                    <h3 class="cart_title_box">Mango People T-Shirt</h3>
+                    <p class="cart_text_box">Price: <span class="color_box">$300</span></p>
+                    <p class="cart_text_box">Color: Red</p>
+                    <p class="cart_text_box">Size: XL</p>
+                    <p class="cart_text_box">Quantity: <input type="number" class="cart_input" min="1" value="1"
+                            required>
+                    </p>
+                </div>
+            </div>
+
+            <div class="cart_box">
+                <img src="img/card_7.png" class="img_cart_box" alt="img">
+                <div class="cart_text">
+                    <h3 class="cart_title_box">Mango People T-Shirt</h3>
+                    <p class="cart_text_box">Price: <span class="color_box">$300</span></p>
+                    <p class="cart_text_box">Color: Red</p>
+                    <p class="cart_text_box">Size: XL</p>
+                    <p class="cart_text_box">Quantity: <input type="number" class="cart_input" min="1" value="1"
+                            required>
+                    </p>
+                </div>
+            </div>
+
+            <div class="cart_bth">
+                <form class="btn_box">
+                    <a href="#" class="btn-design-box">Clear Shopping Cart</a>
+                </form>
+                <form class="btn_box">
+                    <a href="#" class="btn-design-box">Continue Shopping</a>
+                </form>
+            </div>
+        </div>
+        <div class="cart-right">
+            <div class="input_box">
+                <h3 class="input_text">Shipping Adress</h3>
+                <input type="text" class="input_cart" minlength="1" maxlength="50" placeholder="Bangladesh" required>
+                <input type="text" class="input_cart" minlength="1" maxlength="50" placeholder="State" required>
+                <input type="text" class="input_cart" minlength="1" maxlength="50" placeholder="Postcode/Zip" required>
+                <form class="btn_box_input">
+                    <a href="#" class="btn-design-box-input">Get a Quote</a>
+                </form>
+            </div>
+            <div class="checkout">
+                <div class="text-proceed">
+                    <p class="text-sub">Sub Total <span class="color-sub">$900</span></p>
+                    <p class="text-grand">Grand Total <span class="color-grand">$900</span></p>
+                </div>
+                <hr class="color-hr">
+                <form class="btn_checkout">
+                    <a href="#" class="btn_checkout_design">Proceed To Checkout</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <aside class="feedback">
+        <section class="wrap feedback-wrap">
+            <div class="feedback-left">
+                <h2 class="hidden">Feedback</h2>
+                <img src="img/Intersect.png" alt="">
+                <p class="feedback-text">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                    <i>a&nbsp;pulvinar purus condimentum&raquo;</i>
+                </p>
+            </div>
+            <div class="feedback-right">
+                <h2 class="feedback-tittle">SUBSCRIBE</h2>
+                <h4 class="feedback-undertittle">FOR OUR NEWLETTER AND PROMOTION</h4>
+                <form class="feedback-button">
+                    <input type="email" class="feedback-buttontext" placeholder="Enter Your Email" minlength="5"
+                        maxlength="20" required>
+                    <button type="submit" class="feedback-submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </aside>
+
+    <footer class="footer">
+        <section class="wrap footer-wrap">
+            <div class="footer-left">
+                <h2 class="hidden">Copy</h2>
+                <p class="footer-text">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            </div>
+            <article class="footer-right">
+                <h2 class="hidden">Social</h2>
+                <a href="#" class="footer-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
