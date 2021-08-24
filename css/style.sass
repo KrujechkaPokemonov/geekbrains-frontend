@@ -1,0 +1,1053 @@
+*
+    margin: 0
+    padding: 0
+
+@import "color"
+@import "font_weight"
+@import "vars"
+@import "transformANDtransition"
+
+
+body
+    margin: 0
+    font-family: 'Lato', sans-serif
+
+.center_site
+    display: flex
+    align-items: center
+
+.wrap
+    width: $site-width
+    margin: 0 auto
+
+.center
+    padding: 0 calc(50% - 1140px / 2)
+
+.header
+    background-color: $color-black
+    color: $color-white
+
+.hidden
+    position: absolute
+    left: -999999px
+    width: 1px
+    height: 1px
+    opacity: 0
+  
+.header-wrap
+    justify-content: space-between
+    @extend .center_site
+
+.logo-link
+    margin-right: 38px
+
+.account-link
+    margin: 7px 35px
+
+.menu
+    display: flex
+    list-style-type: none
+    justify-content: flex-end
+
+.menu-list
+    position: relative
+    padding: 20px 0
+
+.menu-link
+    color: $color-white
+
+.menu-link-img
+    padding-top: 10px
+
+.menu-list:hover .mega-box
+    display: block
+    position: absolute
+    top: 86px
+    z-index: 9999
+    width: 165px
+
+.mega-box
+    background-color: $color-white
+    padding: 34px 37px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    display: none
+    min-height: 696px
+    flex-direction: column
+
+.mega-head
+    color: $color-black
+    text-transform: uppercase
+    font-weight: $max
+    font-size: 14px
+
+.mega-heading
+    color: $color-pink
+    text-transform: uppercase
+    font-weight: $normal
+    font-size: 14px
+    margin-top: 24px
+    margin-bottom: 12px
+
+.mega-link
+    color: $color-grey
+    padding-left: 15px
+    font-size: 14px
+    font-weight: $normal
+    line-height: 17px
+    display: block
+    text-decoration: none
+    padding-bottom: 11px
+
+.mega-link:hover
+    color: $color-pink
+
+.promo
+    background-color: $color-light-red
+
+.promo-wrap
+    background-image: url(../img/promo.png)
+    min-height: 764px
+    background-position-x: -226px
+    background-position-y: bottom
+    background-repeat: no-repeat
+    @extend .center_site
+    justify-content: flex-end
+
+.promo-title
+    margin: 0
+    font-size: 37px
+    font-weight: $max
+    padding-left: 16px
+    border-left: 12px solid $color-pink
+
+.promo-title-weight
+    font-weight: $extra
+    font-size: 48px
+
+.promo-title-color
+    color: $color-pink
+
+.categories
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 65px
+    padding-bottom: 30px
+
+.category-item
+    width: 360px
+    height: 260px
+    color: white
+    text-align: center
+    @extend .center_site
+    justify-content: center
+
+.category-text
+    font-size: 16px
+    line-height: 30px
+    font-weight: $normal
+    text-align: center
+
+.category-color
+    color: $color-pink
+    font-size: 24px
+    font-weight: $max
+
+.category-women
+    background-image: url(../img/for_women.png)
+
+.category-women:hover
+    transform: scale(1.1)
+    transition: all 0.3s
+
+.category-men
+    background-image: url(../img/for_men.png)
+
+.category-men:hover
+    transform: scale(1.1)
+    transition: all 0.3s
+
+.category-kids
+    background-image: url(../img/for_kids.png)
+
+.category-kids:hover
+    transform: scale(1.1)
+    transition: all 0.3s
+
+.category-acces
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 96px
+    height: 180px
+    background-image: url(../img/accesories.png)
+
+.category-acces:hover
+    transform: scale(1.1)
+    transition: all 0.3s
+
+.fetured
+    text-align: center
+    color: $color-black
+
+.fetured-item
+    font-size: 30px
+    line-height: 36px
+    margin-bottom: 6px
+
+.fetured-text
+    font-size: 14px
+    line-height: 17px
+    color: $color-dark-grey
+    margin-bottom: 48px
+
+.card
+    display: flex
+
+.card-items
+    justify-content: center
+    display: flex
+    flex-flow: row wrap
+    align-content: flex-end
+    margin-bottom: 30px
+    position: relative
+
+.card-item
+    border-radius: 5px
+    margin-right: 20px
+    margin-bottom: 30px
+    box-sizing: border-box
+    flex-direction: column
+
+.card-item-link
+    text-decoration: none
+    display: block
+
+.card-img
+    width: 100%
+
+.card-item-link:hover .card-img
+    filter: brightness(50%)
+
+.card-title
+    padding-top: 30px
+    font-size: 13px
+    line-height: 16px
+    text-transform: uppercase
+    color: $color-black
+    margin-bottom: 13px
+    font-weight: $max
+
+.under-image
+     background: $color-light-grey
+     margin-top: -10px
+     padding-bottom: 20px
+     padding-left: 16px
+
+.card-text
+    font-weight: $medium
+    width: 315px
+    font-size: 14px
+    line-height: 17px
+    color: #5D5D5D
+    margin-bottom: 18px
+
+.card-price
+    font-size: 16px
+    color: $color-pink
+
+.img-responsive 
+    position: relative
+
+.button_card 
+    @extend .center_site
+    opacity: 0
+    position: absolute
+    padding: 16px 14px
+    border: $bd-width solid $color-white
+    top: 189px
+    background: rgba(0, 0, 0, .3)
+    left: calc(50% - 70px)
+    color: $color-white
+    transition: all 0.3s
+    cursor: pointer
+
+.cart_text
+    margin-left: 12px
+    font-size: 16px
+    line-height: 17px
+    font-weight: $normal
+
+.button_card:hover 
+    box-shadow: 6px 4px 35px rgba(255, 255, 255, 0.685)
+
+.img-responsive:hover .button_card 
+    opacity: 1
+    transition: all 1s
+    transform: scale(1.2)
+
+.btn
+    position: relative
+    bottom: -30px
+    transition: all 1s
+
+.btn-design
+    display: inline-block
+    background: $color-white
+    padding: 12px  35px
+    margin-bottom: 96px
+    color: $color-pich
+    text-decoration: none
+    border: $bd-width solid $color-pich
+    cursor: pointer
+    transition: all 0.3s
+    
+
+.btn-design:hover
+    background-color: $color-pink
+    color: $color-white
+    text-decoration: none
+
+.feature
+   background-color: $color-light-black
+   padding: 20px 0
+   color: $color-white
+
+.feature-icon 
+    @extend .center_site
+    justify-content: center
+
+.icon  
+    padding: 60px
+    text-align: center
+
+.feature-tittle
+    padding-top: 28px
+    line-height: 16px
+    margin-bottom: 13px
+    font-weight: $normal
+
+.feature-text
+    font-weight: $medium
+    font-size: 14px
+    line-height: 17px
+    color: $color-light-grey
+    padding-top: 16px
+    width: 350px    
+
+.feedback
+    background-image: url(../img/feedback.jpg)
+    min-height: 448px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    
+.feedback-wrap
+    @extend .center_site
+    justify-content: space-between
+
+.feedback-left
+    text-align: center
+    padding-top: 100px
+    padding-left: 70px
+
+.feedback-text
+    padding-top: 30px
+    width: 300px
+
+.feedback-right
+    text-align: center
+    padding-right: 150px
+    padding-top: 150px
+
+.feedback-undertittle
+    padding-top: 10px
+    font-weight: $normal
+
+.feedback-button
+    padding-top: 32px
+
+.feedback-buttontext
+    background-color: $color-light-light-grey
+    border-radius: 50px 0 0 50px
+    padding: 20px
+    border-style: none
+    color: $color-light-black
+    width: 250px
+
+.feedback-submit  
+    background-color: $color-pink
+    padding: 20px
+    border-radius: 0 50px 50px 0
+    border-style: none
+    margin-left: -3px
+    color: $color-white
+
+.footer-wrap
+    justify-content: space-between
+    @extend .center_site
+
+.footer
+    background-color: #222224
+    padding: 20px 0
+    color: $color-white
+
+.footer-text
+    font-size: 16px
+
+.footer-link
+    padding-right: 2px
+    text-decoration: none
+
+.fa-instagram , .fa-twitter
+    color: $color-black
+    background-color: $color-white
+    margin-left: 3px
+    font-size: 32px
+    transition: all 0.3s
+    border: $bd-m-width solid $color-white
+
+.fa-twitter:hover
+    color: $color-white
+    background-color: $color-pink
+    font-size: 32px
+    border: $bd-m-width solid $color-pink
+
+.fa-instagram:hover
+    color: $color-white
+    background-color: $color-pink
+    font-size: 32px
+    border: $bd-m-width solid $color-pink
+    
+/*catalog*/
+    
+.under-header
+    background-color: $color-light-grey
+    padding: 50px
+
+.under-header-wrap
+    @extend .center_site
+    justify-content: space-between
+
+.under-header-title
+    color: $color-pink
+    font-weight: $normal
+    text-transform: uppercase
+
+.under-header-right
+    display: flex
+    justify-content: space-between
+
+.under-header-breadcrumb
+    padding: 8px 16px
+    list-style: none
+
+.under-header-breadcrumb li
+    display: inline
+
+.under-header-breadcrumb li+li:before
+    padding: 8px
+    color: $color-dark-dark-grey
+    content: "/\00a0"
+
+.under-header-nav
+    font-size: 14px
+    font-weight: $normal
+    color: $color-dark-dark-grey
+    text-decoration: none
+    font-weight: $medium
+    font-size: 14px
+
+.under-header-nav:hover
+    color: $color-pink
+    text-decoration: none
+    font-weight: $max
+
+.under-header-text
+    color: $color-pink
+    font-size: 14px
+    font-weight: $max
+
+.goods
+    padding: 50px
+
+.goods-center
+    @extend .center_site
+    justify-content: space-between
+
+.goods-left
+    display: flex
+
+.link
+    display: flex
+    text-decoration: none
+    color: $color-black
+    font-size: 14px
+    font-weight: 600
+    line-height: 17px
+
+.link:hover
+    color: $color-red
+
+.link_img
+    width: 15px
+    height: 10px
+    fill: $color-black
+
+.link:hover .link_img
+    fill: $color-red
+    
+.goods-tittle
+    padding-right: 11px
+
+.goods-list
+    display: flex
+
+.menu-list:hover .goods-list-box
+    display: block
+    position: absolute
+    z-index: 9999
+    width: 79px
+
+.goods-list-box
+    background-color: $color-white
+    padding: 7px 9px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    display: none
+    min-height: 103px
+    flex-direction: column
+
+.custom_checkbox
+    border: $bd-width solid $color-light-light-light-grey
+    z-index: -1
+    opacity: 0
+
+.custom_checkbox+label 
+    display: inline-flex
+    align-items: center
+    user-select: none
+
+.custom_checkbox+label::before 
+    content: ''
+    display: inline-block
+    width: 1em
+    height: 1em
+    flex-shrink: 0
+    flex-grow: 0
+    border: $bd-width solid $color-pink
+    border-radius: 0.25em
+    margin-right: 0.5em
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.custom_checkbox:not(:disabled):not(:checked)+label:hover::before
+    border-color: $color-pink
+
+.custom_checkbox:not(:disabled):active+label::before
+    background-color: $color-pink
+    border-color: $color-pich
+
+.custom_checkbox:focus+label::before 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+.custom_checkbox:focus:not(:checked)+label::before
+    border-color: $color-pich
+    
+.custom_checkbox:checked+label::before 
+    border-color: $color-pich
+    background-color: $color-pink
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+    
+.flex_list
+    display: flex
+
+.checkbox_new
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 10px
+    color: $color-grey
+
+.goods-right
+    display: flex
+    padding-right: 435px
+
+.goods-text
+    padding-right: 10px
+    color: #6F6E6E
+    font-size: 14px
+
+.goods-list
+    padding-right: 28px
+
+.navigation-ul
+    display: inline-block
+    padding: 0
+    margin: 0
+    border: $bd-width solid $color-light-light-light-grey
+    margin-top: 49px
+    margin-bottom: 97px
+
+.navigation-ul li
+    display: inline
+
+.navigation-ul li a
+    color: $color-light-light-light-grey
+    float: left
+    padding: 15px 17px
+    text-decoration: none
+    font-weight: $medium
+    font-size: 16px
+    line-height: 19px
+
+.navigation-ul li a.active
+    color: $color-red
+
+.navigation-ul li a:hover:not(.active)
+    background-color: $color-red
+    color: $color-light-light-light-grey
+
+/*product*/
+    
+.slider
+    background-image: url(../img/Slider.png)
+    min-height: 777px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+
+.slider-buttons
+    display: flex
+    justify-content: space-between
+
+.slider-submit
+    background-color: #D6D6D6
+    padding: 8px
+    height: 47px
+    width: 47px
+    border-style: none
+    margin-top: 300px
+
+.collection
+    border: $bd-width solid #EAEAEA
+    margin-top: -65px
+    background-color: $color-white
+
+.collection-wrap
+    display: flex
+    justify-content: center
+
+.collection-center
+    padding-top: 20px
+    text-align: center
+
+.collection-tittle
+    color: $color-pink
+    font-size: 14px
+    font-weight: $normal
+
+.line
+    display: flex
+    justify-content: center
+    margin-top: 12px
+
+.collection-line
+    height: 3px
+    background-color: $color-pink
+    width: 63px
+
+.collection-tittle-second
+    padding-right: 10px
+    padding-top: 20px
+    font-weight: $medium
+
+.collection-text
+    padding-top: 48px
+    font-weight: $medium
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #5E5E5E
+    width: 555px
+
+.collection-price
+    font-size: 24px
+    font-weight: $medium
+    color: $color-pink
+    padding-top: 32px
+
+.second-line
+    display: flex
+    justify-content: center
+
+.collection-line-second
+    height: 1px
+    width: 642px
+    background-color: #EAEAEA
+    margin-top: 65px
+    margin-bottom: 65px
+    
+.collection-right
+    display: flex
+    justify-content: center
+    
+.collection-btn
+    margin-top: 48px
+    margin-bottom: 65px
+    left: calc(50% - 100px)
+    position: relative
+
+.collection-btn-design
+    background: $color-white
+    color: $color-pich
+    border: $bd-width solid $color-pich
+    font-size: 16px
+    font-weight: $normal
+    padding: 15px 56px 13px 24px
+    @extend .center_site
+    cursor: pointer
+
+.coll_img
+    fill: $color-pich
+    width: 27px
+    height: 27px
+    margin-right: 23px
+
+.collection-btn-design:hover
+    color: $color-white
+    background-color: $color-pich
+    transition: all 0.3s
+
+.collection-btn-design:hover .coll_img
+    fill: $color-white
+    background-color: $color-pich
+    transition: all 0.3s
+
+.card-top
+    margin-top: 128px
+    margin-bottom: 128px
+
+.card-items2
+    justify-content: center
+    display: flex
+    margin-top: 128px
+    align-content: flex-end
+
+.card-item2
+    padding: 15px
+    border-radius: 5px
+    margin-bottom: 20px
+    box-sizing: border-box
+    flex-direction: column
+
+
+/*cart*/
+
+.cart
+    display: flex
+
+.img_cart_box
+    width: 262px
+    height: 306px
+    float: left
+    background-repeat: no-repeat
+    padding-right: 31px
+
+.cart_left
+    margin-top: 64px
+
+.cart-right
+    margin-left: 130px
+    margin-top: 64px
+
+.cart_box
+    background-color: $color-white
+    height: 306px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    width: 652px
+    margin-bottom: 40px
+    display: flex
+
+.cart_text_box
+    font-size: 22px
+    line-height: 26px
+    font-weight: $normal
+    margin-bottom: 6px
+    color: $color-grey-cart
+
+.color_box
+    color: $color-pink
+
+.cart_title_box
+    font-size: 24px;
+    color: $color-black
+    font-weight: $normal
+    padding-top: 22px
+    padding-bottom: 42px
+    text-transform: uppercase
+    width: 200px
+    line-height: 29px;
+
+.cart_input
+    border: $bd-width solid $color-bd-cart
+    color: $color-grey
+    font-size: 18px
+    line-height: 22px
+    font-weight: $normal
+    text-align: center
+    width: 44px
+    height: 24px
+    margin-left: 20px
+
+.cart_bth
+    display: flex
+    width: 660px
+    justify-content: space-between
+
+.btn_box
+    position: relative
+    margin-top: 32px
+    bottom: -30px
+
+.btn-design-box
+    display: inline-block
+    background: $color-white
+    padding: 16px  41px
+    margin-bottom: 144px
+    color: $color-bth-cart
+    text-decoration: none
+    border: $bd-width solid $color-bth-cart
+    cursor: pointer
+    text-transform: uppercase
+
+.btn-design-box:hover
+    background-color: $color-pink
+    color: $color-white
+    text-decoration: none
+    transition: all 0.3s
+
+.input_text
+    font-size: 16px
+    line-height: 19px
+    text-transform: uppercase
+    color: $color-black-cart
+    font-weight: $medium
+    margin-bottom: 21px
+
+.input_cart
+    color: $color-input-cart
+    border: $bd-width solid $color-bth-cart
+    padding: 15px 18px
+    width: 310px
+    font-size: 13px
+    line-height: 16px
+    font-weight: $medium
+    margin-bottom: 21px
+
+.btn_box_input
+    position: relative
+
+.btn-design-box-input
+    display: inline-block
+    background: $color-white
+    padding: 12px  20px
+    margin-bottom: 45px
+    color: $color-bth-cart
+    text-decoration: none
+    border: $bd-width solid $color-bth-cart
+    cursor: pointer
+    text-transform: uppercase
+    font-size: 11px
+    line-height: 13px
+    font-weight: $medium
+
+.btn-design-box-input:hover
+    background-color: $color-pink
+    color: $color-white
+    text-decoration: none
+    transition: all 0.3s
+
+.checkout
+    width: 270px
+    height: 150px
+    background: $color-checkout
+    padding: 44px 42px
+
+.text-proceed
+    text-align: right
+
+.text-sub
+    font-size: 11px
+    line-height: 13px
+    font-weight: $normal
+    color: $color-bth-cart
+    text-transform: uppercase
+    margin-bottom: 12px
+    
+.color-sub
+    margin-left: 10px
+
+.text-grand
+    font-size: 16px
+    line-height: 19px
+    font-weight: $medium
+    color: $color-black-cart
+    text-transform: uppercase
+    margin-bottom: 21px
+
+.color-grand
+    margin-left: 10px
+    color: $color-pink
+    font-weight: $max
+
+.color-hr
+    border: $bd-width solid $color-hr
+    margin-bottom: 17px
+
+.btn_checkout
+    position: relative
+
+.btn_checkout_design
+    display: inline-block
+    background: $color-pink
+    padding: 15px  39px
+    color: $color-white
+    text-decoration: none
+    cursor: pointer
+    text-transform: uppercase
+    font-size: 16px
+    line-height: 19px
+    font-weight: $medium
+
+.btn_checkout_design:hover
+    background-color: $color-white
+    border: $bd-width solid $color-pink
+    color: $color-pink
+    text-decoration: none
+    transition: all 0.3s
+
+/*Registration*/
+
+.registration_title
+    color: $color-black-cart
+    font-size: 16px
+    line-height: 19px
+    font-weight: $medium
+    margin-bottom: 20px
+
+.registration_input
+    border: $bd-width solid $color-bth-cart
+    font-size: 13px
+    line-height: 16px
+    font-weight: $medium
+    padding: 15px 18px
+    width: 360px
+    color: $color-input-cart
+    margin-bottom: 20px
+
+.registration_choice
+    display: flex
+    margin-top: 25px
+    margin-bottom: 33px
+    margin-left: -15px
+
+.custom_radio
+    z-index: -1
+    opacity: 0
+
+.custom_radio+label
+    display: inline-flex
+    align-items: center
+    user-select: none
+
+.custom_radio+label::before
+    content: ''
+    display: inline-block
+    width: 1em
+    height: 1em
+    flex-shrink: 0
+    flex-grow: 0
+    border: $bd-width solid $color-input-cart
+    border-radius: 50%
+    margin-right: 0.5em
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.custom_radio:not(:disabled):not(:checked)+label:hover::before
+    border-color: $color-pink
+
+.custom_radio:not(:disabled):active+label::before
+    background-color: $color-pink
+    border-color: $color-pich
+
+.custom_radio:focus+label::before 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+.custom_radio:checked+label::before 
+    border-color: $color-pich
+    background-color: $color-pink
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e")
+
+.text_radio
+    font-size: 15px
+    line-height: 13px
+    color: $color-black
+    font-weight: $medium
+
+.registration_text
+    font-size: 13px
+    line-height: 16px
+    font-weight: $medium
+    width: 360px
+    color: $color-input-cart
+
+.registration_bth
+    position: relative
+    margin-top: 39px
+
+.registration_bth_design
+    display: inline-block
+    background: $color-pink
+    padding: 16px  41px
+    margin-bottom: 96px
+    color: $color-white
+    text-decoration: none
+    border: $bd-width solid $color-bth-cart
+    cursor: pointer
+    text-transform: uppercase
+
+.registration_bth_design:hover
+    background-color: $color-white
+    color: $color-pink 
+    text-decoration: none
+    transition: all 0.3s
+
+.registration_title_right
+    font-size: 24px
+    line-height: 29px
+    color: $color-black
+    font-weight: $medium
+    margin-bottom: 22px
+    text-transform: uppercase
+    
+.right-text
+    font-size: 24px
+    line-height: 29px
+    font-weight: $medium
+    color: $color-black
+    margin-bottom: 21px
+    width: 652px
+
+.li_marker
+    list-style-type: none
+    font-size: 24px
+    line-height: 29px
+    font-weight: $medium
+    color: $color-black
+    margin-bottom: 10px
+
+.li_marker:before
+    content: "✓"
+    margin-right: 23px
+    color: $color-black
